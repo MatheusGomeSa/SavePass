@@ -13,8 +13,8 @@ import {
 } from './styles';
 
 interface Props extends TextInputProps {
-  control: Control;
-  name: string;
+  control: Control<{ email: string, password: string, service_name: string }>;
+  name: "email" | "password" | "service_name";
   title: string;
   error: string;
 }
